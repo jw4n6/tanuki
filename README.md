@@ -11,8 +11,8 @@ The PWSH script performes the following actions when launched:
 3. Creates the directories "C:\AtomicRedTeam\ExternalPayloads"
 4. Excludes "C:\AtomicRedTeam" in Microsoft Defender
 5. Installs and enables Atomic Red Team
-6. Executes a set of Atomic Red Team tests, downloads additional tools and simulates ransomware activity
-7. Creates 100 files with extension .tanuki, ransom note and replaces desktop wallpaper
+6. Simulates ransomware attack by executing a set of Atomic Red Team tests
+7. Creates 100 files with extension .tanuki, ransom note and replaces the desktop wallpaper
  
 ### Tactics, Techniques, and Procedures (TTPs)
 | **Tactic**        | **Technique** | **Sub-techniques or Tools** |
@@ -28,4 +28,4 @@ The PWSH script performes the following actions when launched:
 
 > In [Japanese folklore](https://en.wikipedia.org/wiki/Japanese_folklore), Japanese raccoon dogs (*tanuki*) have had a significant role since ancient times. They are reputed to be mischievous and jolly, masters of disguise and [shapeshifting](https://en.wikipedia.org/wiki/Shapeshifting) but somewhat gullible and absent-minded.
 
-Source: (https://en.wikipedia.org/wiki/Japanese_raccoon_dog)
+Source: https://en.wikipedia.org/wiki/Japanese_raccoon_dog
