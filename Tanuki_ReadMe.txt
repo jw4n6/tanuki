@@ -6,10 +6,10 @@ Don’t worry, it’s still there—just inaccessible... for now.
 
 We understand you’d like to get everything back. That’s why we’re offering you a way out.
 Follow our instructions, and your files will be as good as new.
-Ignore us, and your data will be publicly published on our leak site.
+Ignore us, and your data will be published on our public leak site.
 
 You’ve got 72 hours to act before the decryption key vanishes.
-After that, all your data are belong to us! 
+After that, all your data are belong to us!
 
 How to Get Your Files Back:
 
