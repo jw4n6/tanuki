@@ -1,6 +1,6 @@
 # Tanuki 🦝
 ### Ransomware Simulation Script (Placeholder)
-Simulates TTPs of a fictitious ransomware group named Tanuki.
+Simulates TTPs of a made-up ransomware group named Tanuki.
 Intended for use on an AD server (virtual machine) that can be restored to snapshot.
 
 ![screenshot](Tanuki_BG.jpg)
