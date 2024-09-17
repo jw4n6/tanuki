@@ -4,7 +4,7 @@ Simulates TTPs of a made-up ransomware group named Tanuki.
 
 Intended for use with PowerShell 7 on an AD server (virtual machine) that can be restored to snapshot.
 
-![screenshot](Tanuki_BG.jpg)
+![screenshot](preview.jpg)
 
 The PWSH script performes the following actions when launched:
 1. Checks if script was executed as Administrator
