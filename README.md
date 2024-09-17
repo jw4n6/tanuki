@@ -4,8 +4,6 @@ Simulates TTPs of a made-up ransomware group named Tanuki.
 
 Intended for use with PowerShell 7 on an AD server (virtual machine) that can be restored to snapshot.
 
-PowerShell script based on ransomware simulation scripts by https://github.com/skandler
-
 ![screenshot](Tanuki_BG.jpg)
 
 The PWSH script performes the following actions when launched:
@@ -31,3 +29,6 @@ The PWSH script performes the following actions when launched:
 | Execution           | T1569: System Services<br />T1559: Inter-Process Communication | T1569.002 - Service Execution (PsExec)<br />Cobalt Strike usage |
 | Defense Evasion     | T1564: Hide Artifacts<br />T1562: Impair Defenses            | T1564.012 - File/Path Exclusions (Windows Defender)<br />T1562.001 - Disable or Modify Tools (Windows Defender/AV)<br />T1562.004 - Disable Microsoft Defender Firewall via Registry |
 | Impact              | T1486: Data Encrypted for Impact<br />T1490: Inhibit System Recovery<br />T1491.001 - Defacement: Internal Defacement | Creates "encrypted" files with .tanuki file extension<br />T1490 - Windows - Delete Volume Shadow Copies with Powershell<br />Replace desktop wallpaper |
+
+
+PowerShell script based on ransomware simulation scripts by https://github.com/skandler
