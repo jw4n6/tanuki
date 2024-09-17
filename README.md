@@ -1,7 +1,7 @@
 # Tanuki 🦝
 ### Ransomware Simulation Script
 Simulates TTPs of a made-up ransomware group named Tanuki.
-Intended for use on an AD server (virtual machine) that can be restored to snapshot.
+Intended for use with PowerShell 7 on an AD server (virtual machine) that can be restored to snapshot.
 
 PowerShell script based on ransomware simulation scripts by https://github.com/skandler
 
