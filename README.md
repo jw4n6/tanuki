@@ -21,7 +21,7 @@ The PWSH script performes the following actions when launched:
 | Initial Access      | N/A                                                          | N/A                                                          |
 | Discovery           | T1033: System Owner/User Discovery<br />T1069: Permission Groups Discovery<br />T1046: Network Service Discovery<br />T1135: Network Share Discovery | T1069.001 - Basic Permission Groups Discovery Windows (Local)<br />T1069.002 - Basic Permission Groups Discovery Windows (Domain)<br />Advanced IP Scanner<br />SharpShares |
 | Lateral Movement    | T1021: Remote Services                                       | T1021.001 - Remote Desktop Protocol (RDP)                    |
-| Collection          | T1560: Archive Collected Data                                | T1560.001 - Using WinRAR to archive data prior to exfiltration |
+| Collection          | T1074: Data Staged                               | T1074.001 - Data Staged: Local Data Staging prior to exfiltration |
 | Command and Control | T1219: Remote Access Software                                | AnyDesk                                                      |
 | Exfiltration        | T1567: Exfiltration Over Web Service                         | T1567.002 - Exfiltrate data with rclone to cloud Storage - Mega |
 | Credential Access   | T1003: OS Credential Dumping<br />T1555: Credentials from Password Stores | T1003.001 - OS Credential Dumping: LSASS Memory - with Mimikatz<br />T1555.003 - Dump Credentials using Lazagne |
