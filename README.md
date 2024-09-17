@@ -31,4 +31,5 @@ The PWSH script performes the following actions when launched:
 | Impact              | T1486: Data Encrypted for Impact<br />T1490: Inhibit System Recovery<br />T1491.001 - Defacement: Internal Defacement | Creates "encrypted" files with .tanuki file extension<br />T1490 - Windows - Delete Volume Shadow Copies with Powershell<br />Replace desktop wallpaper |
 
 
-PowerShell script based on ransomware simulation scripts by https://github.com/skandler
+## Acknowledgments
+This project is inspired by the ransomware simulation scripts by [github.com/skandler](https://github.com/skandler)
